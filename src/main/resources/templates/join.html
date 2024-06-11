@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WantedMarket</title>
+</head>
+<body>
+<h1>join페이지입니다.</h1>
+<div id="container">
+    <div id="login_signup_area">
+        <h1>회원가입</h1>
+        <form action="/joinProc" method="post" name="joinForm" onsubmit="return validateForm()">
+            <input type="text" name="username" placeholder="Username"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <input type="submit" value="Join"/>
+        </form>
+    </div>
+    <p class="button_info">이미 계정이 있으신가요?</p>
+    <a href="/login"><button type="button">로그인</button></a>
+</div>
+
+</body>
+</html>
