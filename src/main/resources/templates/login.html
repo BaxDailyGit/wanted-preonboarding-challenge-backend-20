@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>WantedMarket</title>
+</head>
+<body>
+<h1>login페이지입니다.</h1>
+<div id="container">
+    <div id="login_signup_area">
+        <h1>로그인</h1>
+        <form id="login_signup_form" action="/loginProc" method="post" name="loginForm">
+            <input id="username" type="text" name="username" placeholder="userId"/>
+            <input id="password" type="password" name="password" placeholder="password"/>
+            <input type="submit" value="login"/>
+        </form>
+    </div>
+    <p class="button_info">WantedMarket가 처음이신가요?</p>
+    <a href="/join"><button type="button">회원가입</button></a>
+    <p class="button_info">비밀번호가 기억나지 않나요?</p>
+    <a href="#"><button type="button">비밀번호 찾기</button></a>
+</div>
+
+
+</body>
+</html>
